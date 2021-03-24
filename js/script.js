@@ -13,4 +13,13 @@ var cognomeUtente= prompt('Inserisci il tuo cognome:');
 
 arrayCognomi.push(cognomeUtente);
 
-console.log(arrayCognomi);
+// ora li ordino in ordine alfabetico
+arrayCognomi.sort();
+document.getElementById('lista-cognomi').innerHTML = ('Lista di cognomi:' + arrayCognomi);
+// console.log(arrayCognomi);
+
+for(i = 0 ; i < arrayCognomi.length ; i++) {
+    if(cognomeUtente == arrayCognomi[i]) {
+        alert('Il tuo cognome è in ' + (i + 1) + ' posizione');
+    }
+}
