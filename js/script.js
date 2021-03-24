@@ -18,8 +18,23 @@ arrayCognomi.sort();
 document.getElementById('lista-cognomi').innerHTML = ('Lista di cognomi:' + arrayCognomi);
 // console.log(arrayCognomi);
 
-for(i = 0 ; i < arrayCognomi.length ; i++) {
+
+
+// con il for 
+// for(i = 0 ; i < arrayCognomi.length ; i++) {
+//     if(cognomeUtente == arrayCognomi[i]) {
+//         alert('Il tuo cognome è in ' + (i + 1) + ' posizione');
+//     }
+// }
+
+
+
+
+// con il while 
+var i= 0;
+while(i < arrayCognomi.length) {
     if(cognomeUtente == arrayCognomi[i]) {
         alert('Il tuo cognome è in ' + (i + 1) + ' posizione');
     }
+    i++;
 }
